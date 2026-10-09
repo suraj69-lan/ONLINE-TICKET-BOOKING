@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Explore Events — TicketBook</title><link rel="stylesheet" href="../css/style.css"></head>
+<body><div class="page"><div id="navbar"></div><main class="container">
+<section class="discover-hero"><div><span class="eyebrow">OCTOBER 2026 · EVENTS</span><h1>Find your next <span>event.</span></h1><p>Browse live sports, concerts, exhibitions and cultural events. Search by event, city, artist or venue.</p></div></section>
+<div class="search-panel"><div class="search-wrap">⌕<input type="search" id="search" placeholder="Search events, teams, artists or venues…" autocomplete="off"></div><div id="filters" class="filters"></div></div>
+<div id="event-grid" class="event-grid"></div>
+</main></div>
+<script src="../js/data.js"></script><script src="../js/nav.js"></script><script src="../js/user.js"></script>
+<script>requireRole('user');renderNav('dashboard');initEventBrowser();</script></body></html>

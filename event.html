@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Event Details — TicketBook</title>
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<div class="page">
+  <div id="navbar"></div>
+  <main class="container" id="event-page">
+    <!-- filled by JS -->
+  </main>
+</div>
+
+<script src="../js/data.js"></script>
+<script src="../js/nav.js"></script>
+<script src="../js/user.js"></script>
+<script>
+  requireRole('user');
+  renderNav('dashboard');
+  initEventDetails();
+</script>
+</body>
+</html>

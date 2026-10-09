@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>TicketBook — Event Booking</title><link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="page">
+  <div class="auth-wrap">
+    <div class="auth-card auth-card-wide">
+      <div class="auth-brand">🎟️ <span>TicketBook</span><b>LIVE</b></div>
+      <h1>Discover what’s on.</h1>
+      <p class="auth-lead">Browse verified October 2026 events, choose your seats, and get a digital ticket in minutes.</p>
+
+      <div class="auth-tabs">
+        <div class="auth-tab active" id="tab-login" onclick="switchTab('login')">Log In</div>
+        <div class="auth-tab" id="tab-signup" onclick="switchTab('signup')">Create Account</div>
+      </div>
+
+      <div class="auth-panel active" id="panel-login">
+        <form id="login-form">
+          <label for="li-email">Email address</label>
+          <input type="email" id="li-email" required placeholder="you@example.com" autocomplete="email">
+          <label for="li-password">Password</label>
+          <input type="password" id="li-password" required placeholder="Your password" autocomplete="current-password">
+          <div class="msg" id="li-msg"></div>
+          <button type="submit" class="btn btn-primary btn-block">Continue securely →</button>
+        </form>
+        <p class="hint">Customer accounts are created from the Create Account tab.</p>
+      </div>
+
+      <div class="auth-panel" id="panel-signup">
+        <form id="signup-form">
+          <label for="su-name">Full name</label>
+          <input type="text" id="su-name" required minlength="2" placeholder="Your full name" autocomplete="name">
+          <label for="su-email">Email address</label>
+          <input type="email" id="su-email" required placeholder="you@example.com" autocomplete="email">
+          <label for="su-password">Password</label>
+          <input type="password" id="su-password" required placeholder="Create a strong password" autocomplete="new-password">
+          <div class="password-meter"><i id="password-meter"></i></div>
+          <div id="password-meter-label" class="password-meter-label">Use 10+ characters with upper/lowercase, a number and symbol.</div>
+          <div class="password-checks">
+            <span data-check="length">10+ chars</span><span data-check="upper">Uppercase</span>
+            <span data-check="lower">Lowercase</span><span data-check="number">Number</span><span data-check="symbol">Symbol</span>
+          </div>
+          <div class="msg" id="su-msg"></div>
+          <button type="submit" class="btn btn-primary btn-block">Create Account →</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="js/data.js"></script><script src="js/nav.js"></script><script src="js/auth.js"></script>
+</body></html>

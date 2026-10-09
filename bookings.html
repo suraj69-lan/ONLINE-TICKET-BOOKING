@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bookings — TicketBook Admin</title>
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<div class="page">
+  <div id="navbar"></div>
+  <main class="container">
+    <div class="section">
+      <h1>All Bookings</h1>
+      <p>Every ticket sold across every event, most recent first.</p>
+    </div>
+    <input type="text" id="booking-search" class="search-box" placeholder="Search by customer or event…">
+    <div id="bookings-table"></div>
+  </main>
+</div>
+
+<script src="../js/data.js"></script>
+<script src="../js/nav.js"></script>
+<script src="../js/admin.js"></script>
+<script>
+  requireRole('admin');
+  renderNav('bookings');
+  initBookingsView();
+</script>
+</body>
+</html>
